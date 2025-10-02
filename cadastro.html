@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto X</title>
+    <script>
+        if (localStorage.getItem("darkmode") === "active") {
+            document.documentElement.classList.add("darkmode");
+        }
+    </script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+<body>
+    <button id="theme-switch">
+        <span class="emoji-lua">
+            🌙
+        </span>
+        <span class="emoji-sol">
+            ☀️
+        </span>
+    </button>
+    <main class="container">
+        <form action="">
+            <h1>Faça o seu cadastro</h1>
+            <div class="input-box">
+                <input placeholder="Nome" type="text">
+                <i class="bx bxs-user"> </i>
+            </div>
+            <div class="input-box">
+                <input placeholder="email" type="email">
+                <i class='bx  bx-envelope-open'></i> 
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                      <input type="checkbox">
+                      Lembrar senha
+                </label>                            
+            </div>
+
+            <button type="submit" class="login">Cadastre-se</button>
+
+            <div class="register-link">
+                <p>Não conseguiu se cadastrar? contate ao <a href="#">suporte</a></p>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
